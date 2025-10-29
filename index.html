@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bitanya Setegn — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="header-container">
+<h1 class="logo">Bitanya <span>Setegn</span></h1>
+<div id="menu-toggle"><i class="fas fa-bars"></i></div>
+ <nav>
+<ul class="nav-links">
+<li><a href="#home" class="nav-link active">Home</a></li>
+<li><a href="#about" class="nav-link">About</a></li>
+<li><a href="#projects" class="nav-link">Projects</a></li>
+<li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+</div>
+<div class="theme-toggle">
+  <i class="fas fa-sun" id="theme-icon"></i>
+ </nav>
+ </div>
+</header>
+<main>
+<section id="home" class="home-section">
+<div class="wave-background"></div>
+<div class="home-container">
+<div class="home-left">
+<h2>Hi, I’m <span class="accent">Bitanya</span></h2>
+<h3 class="typed-text"></h3>
+<p> I love learning new skills.
+Trying, experimenting, and discovering new things excites me every single day.
+Here, I share my works the things I’m interested to learn.</p>
+<div class="home-buttons">
+<a href="#projects" class="btn">See My Projects</a>
+<a href="#contact" class=" btn-outline">Contact Me</a>
+</div>
+<div class="social-icons">
+<a href="https://github.com/bitanya-set" target="_blank" class="git"><i class="fab fa-github"></i></a>
+ <a href="https://t.me/beza_yop" target="_blank"><i class="fab fa-telegram"></i></a>
+<a href="https://www.linkedin.com/in/bitaniya-setegn-a0726a35a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=bitaniasetegn@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+ </div>
+ </div>
+<div class="home-right">
+ <img src="picture.jpg" alt="Bitanya Setegn" class="home-photo">
+</div>
+</div>
+</section>
+ <section id="about" class="section">
+ <h2 >About Me</h2>
+<p> I love tying to build applications and systems using Java, C++, and MySQL.
+My passion is creating efficient and interactive solutions.</p>
+<h3>My Works</h3>
+<div class="about-cards">
+<div class="about-card" style="background-image:url('car.jpg')">
+ <div class="overlay"><p>Vehicle Rental System: Java-based rental management application.</p></div>
+</div>
+<div class="about-card" style="background-image:url('super.jpg')">
+<div class="overlay"><p>Supermarket Management System: C++ console-based product management.</p></div>
+</div>
+<div class="about-card" style="background-image:url('tourist.jpg')">
+<div class="overlay"><p>Tourist Reservation System: MySQL-based database project for bookings.</p></div>
+</div>
+ </div>
+
+  <h3>Skills</h3>
+ <div class="skills-container">
+<div class="skill">
+<p>HTML, CSS, JavaScript</p>
+ <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+ </div>
+<div class="skill">
+   <p>Java</p>
+  <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+  </div>
+  <div class="skill">
+   <p>C++</p>
+  <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+      </div>
+    <div class="skill">
+      <p>SQL & MySQL</p>
+    <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+    <div class="skill"></div>
+    <p>Data structure & Algorithm</p>
+    <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+
+     </div>
+    </div>
+    </section>
+  <section id="projects" class="section">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+  <div class="project-card">
+  <h4 class="two-color">Vehicle Rental System (Java)</h4>
+  <p> Manages vehicles, customers, and rentals with automatic calculation,
+ enforces one-vehicle-per-customer rule shows availability, and generates revenue and rental reports.</p>
+ <a href="https://github.com/Bitanya-set/oop-projects" target="_blank"><i class="fab fa-github"></i> View Source</a>
+ </div>
+ <div class="project-card" >
+  <h4 class="two-color">Supermarket Management System (C++)</h4>
+ <p> Manage products within each category (add, update, remove)
+  Search and display products
+  also Check for expired products.</p>
+ <a href="https://github.com/Bitanya-set/stock-projects/blob/main/stock.cpp" target="_blank"><i class="fab fa-github"></i> View Source</a>
+  </div>
+  <div class="project-card">
+    <h4 class="two-color">Tourist Reservation System (MySQL)</h4>
+  <p>Manages tourists, tours, hotels, transport, and payments with automated IDs,
+      tracking, and reporting for efficient travel agency management.</p>
+   <a href="https://github.com/Bitanya-set/stock-projects/blob/main/tourist%20reservation.sql" target="_blank"><i class="fab fa-github"></i> View Source</a>
+     </div>
+    </div>
+    </section>
+    <section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+  <div class="name-fields">
+  <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+  <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+  </div>
+  <input type="email" id="email" name="email" placeholder="Email" required>
+  <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+ <button type="submit" class="btn" style="background-color: rgb(16, 99, 182);">Send Message</button>
+ <div id="formStatus" class="form-status"></div>
+ </form>
+</section>
+
+  </main>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <footer class="foot">
+    <h4>copyright © <span id="year"></span> by  Bitanya Setegn</h4>
+   
+      <p> phone number(+251911267484)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
